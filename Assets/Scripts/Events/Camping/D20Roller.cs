@@ -23,7 +23,6 @@ public class D20Roller : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     void Start()
     {
         player = GameObject.FindWithTag("Player");
-
     }
 
     // This function is called when the roll button is clicked
@@ -43,12 +42,66 @@ public class D20Roller : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         {
             IsOnTW();
         }
+        if(posCheck.isOnNM)
+        {
+            IsOnNM();
+        }
+        if(posCheck.isOnSH)
+        {
+            IsOnSH();
+        }
+        if(posCheck.isOnDW)
+        {
+            IsOnDW();
+        }
+        if(posCheck.isOnNH)
+        {
+            IsOnNH();
+        }
+        if(posCheck.isOnLV)
+        {
+            IsOnLV();
+        }
+        if(posCheck.isOnHT)
+        {
+            IsOnHT();
+        }
+        if(posCheck.isOnDR)
+        {
+            IsOnDR();
+        }
+        if(posCheck.isOnTL)
+        {
+            IsOnTL();
+        }
+        if(posCheck.isOnGL)
+        {
+            IsOnGL();
+        }
+        if(posCheck.isOnPX)
+        {
+            IsOnPX();
+        }
+        if(posCheck.isOnGU)
+        {
+            IsOnGU();
+        }
+        if(posCheck.isOnNU)
+        {
+            IsOnNU();
+        }
+        if(posCheck.isOnTV)
+        {
+            IsOnTV();
+        }
+        if(posCheck.isOnBM)
+        {
+            IsOnBM();
+        }
 
         // Update the roll result text to show the result of the roll
         rollResultText.text = "You rolled a " + rollResult;
         rollResultText.gameObject.SetActive(true);
-
-
 
         Invoke("HideResultText", displayTime);
     }
@@ -264,7 +317,1350 @@ public class D20Roller : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             encounterResultText.gameObject.SetActive(true);
         }
     }
-
+    public void IsOnKL()
+    {
+        if (rollResult <= 5)
+        {
+            Debug.Log("Old Result: " + rollResult);
+            newRollResult = Random.Range(1, 21);
+            Debug.Log("New Result: " + newRollResult);
+            if (newRollResult <= 5)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 5 && newRollResult < 9)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 8 && newRollResult < 12)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 11 && newRollResult < 14)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 13 && newRollResult < 16)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 15 && newRollResult < 18)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 17 && newRollResult < 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult == 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+        }
+        if (rollResult > 5 && rollResult < 9)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 8 && rollResult < 12)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 11 && rollResult < 14)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 13 && rollResult < 16)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 15 && rollResult < 18)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 17 && rollResult < 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult == 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+    }
+    public void IsOnNM()
+    {
+        if (rollResult <= 5)
+        {
+            Debug.Log("Old Result: " + rollResult);
+            newRollResult = Random.Range(1, 21);
+            Debug.Log("New Result: " + newRollResult);
+            if (newRollResult <= 5)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 5 && newRollResult < 9)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 8 && newRollResult < 12)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 11 && newRollResult < 14)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 13 && newRollResult < 16)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 15 && newRollResult < 18)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 17 && newRollResult < 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult == 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+        }
+        if (rollResult > 5 && rollResult < 9)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 8 && rollResult < 12)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 11 && rollResult < 14)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 13 && rollResult < 16)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 15 && rollResult < 18)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 17 && rollResult < 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult == 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+    }
+    public void IsOnSH()
+    {
+        if (rollResult <= 5)
+        {
+            Debug.Log("Old Result: " + rollResult);
+            newRollResult = Random.Range(1, 21);
+            Debug.Log("New Result: " + newRollResult);
+            if (newRollResult <= 5)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 5 && newRollResult < 9)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 8 && newRollResult < 12)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 11 && newRollResult < 14)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 13 && newRollResult < 16)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 15 && newRollResult < 18)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 17 && newRollResult < 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult == 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+        }
+        if (rollResult > 5 && rollResult < 9)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 8 && rollResult < 12)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 11 && rollResult < 14)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 13 && rollResult < 16)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 15 && rollResult < 18)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 17 && rollResult < 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult == 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+    }
+    public void IsOnDW()
+    {
+        if (rollResult <= 5)
+        {
+            Debug.Log("Old Result: " + rollResult);
+            newRollResult = Random.Range(1, 21);
+            Debug.Log("New Result: " + newRollResult);
+            if (newRollResult <= 5)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 5 && newRollResult < 9)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 8 && newRollResult < 12)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 11 && newRollResult < 14)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 13 && newRollResult < 16)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 15 && newRollResult < 18)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 17 && newRollResult < 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult == 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+        }
+        if (rollResult > 5 && rollResult < 9)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 8 && rollResult < 12)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 11 && rollResult < 14)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 13 && rollResult < 16)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 15 && rollResult < 18)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 17 && rollResult < 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult == 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+    }
+    public void IsOnNH()
+    {
+        if (rollResult <= 5)
+        {
+            Debug.Log("Old Result: " + rollResult);
+            newRollResult = Random.Range(1, 21);
+            Debug.Log("New Result: " + newRollResult);
+            if (newRollResult <= 5)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 5 && newRollResult < 9)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 8 && newRollResult < 12)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 11 && newRollResult < 14)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 13 && newRollResult < 16)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 15 && newRollResult < 18)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 17 && newRollResult < 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult == 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+        }
+        if (rollResult > 5 && rollResult < 9)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 8 && rollResult < 12)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 11 && rollResult < 14)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 13 && rollResult < 16)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 15 && rollResult < 18)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 17 && rollResult < 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult == 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+    }
+    public void IsOnLV()
+    {
+        if (rollResult <= 5)
+        {
+            Debug.Log("Old Result: " + rollResult);
+            newRollResult = Random.Range(1, 21);
+            Debug.Log("New Result: " + newRollResult);
+            if (newRollResult <= 5)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 5 && newRollResult < 9)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 8 && newRollResult < 12)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 11 && newRollResult < 14)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 13 && newRollResult < 16)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 15 && newRollResult < 18)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 17 && newRollResult < 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult == 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+        }
+        if (rollResult > 5 && rollResult < 9)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 8 && rollResult < 12)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 11 && rollResult < 14)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 13 && rollResult < 16)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 15 && rollResult < 18)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 17 && rollResult < 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult == 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+    }
+    public void IsOnHT()
+    {
+        if (rollResult <= 5)
+        {
+            Debug.Log("Old Result: " + rollResult);
+            newRollResult = Random.Range(1, 21);
+            Debug.Log("New Result: " + newRollResult);
+            if (newRollResult <= 5)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 5 && newRollResult < 9)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 8 && newRollResult < 12)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 11 && newRollResult < 14)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 13 && newRollResult < 16)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 15 && newRollResult < 18)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 17 && newRollResult < 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult == 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+        }
+        if (rollResult > 5 && rollResult < 9)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 8 && rollResult < 12)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 11 && rollResult < 14)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 13 && rollResult < 16)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 15 && rollResult < 18)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 17 && rollResult < 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult == 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+    }
+    public void IsOnDR()
+    {
+        if (rollResult <= 5)
+        {
+            Debug.Log("Old Result: " + rollResult);
+            newRollResult = Random.Range(1, 21);
+            Debug.Log("New Result: " + newRollResult);
+            if (newRollResult <= 5)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 5 && newRollResult < 9)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 8 && newRollResult < 12)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 11 && newRollResult < 14)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 13 && newRollResult < 16)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 15 && newRollResult < 18)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 17 && newRollResult < 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult == 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+        }
+        if (rollResult > 5 && rollResult < 9)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 8 && rollResult < 12)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 11 && rollResult < 14)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 13 && rollResult < 16)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 15 && rollResult < 18)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 17 && rollResult < 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult == 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+    }
+    public void IsOnTL()
+    {
+        if (rollResult <= 5)
+        {
+            Debug.Log("Old Result: " + rollResult);
+            newRollResult = Random.Range(1, 21);
+            Debug.Log("New Result: " + newRollResult);
+            if (newRollResult <= 5)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 5 && newRollResult < 9)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 8 && newRollResult < 12)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 11 && newRollResult < 14)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 13 && newRollResult < 16)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 15 && newRollResult < 18)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 17 && newRollResult < 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult == 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+        }
+        if (rollResult > 5 && rollResult < 9)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 8 && rollResult < 12)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 11 && rollResult < 14)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 13 && rollResult < 16)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 15 && rollResult < 18)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 17 && rollResult < 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult == 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+    }
+    public void IsOnRL()
+    {
+        if (rollResult <= 5)
+        {
+            Debug.Log("Old Result: " + rollResult);
+            newRollResult = Random.Range(1, 21);
+            Debug.Log("New Result: " + newRollResult);
+            if (newRollResult <= 5)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 5 && newRollResult < 9)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 8 && newRollResult < 12)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 11 && newRollResult < 14)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 13 && newRollResult < 16)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 15 && newRollResult < 18)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 17 && newRollResult < 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult == 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+        }
+        if (rollResult > 5 && rollResult < 9)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 8 && rollResult < 12)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 11 && rollResult < 14)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 13 && rollResult < 16)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 15 && rollResult < 18)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 17 && rollResult < 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult == 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+    }
+    public void IsOnGL()
+    {
+        if (rollResult <= 5)
+        {
+            Debug.Log("Old Result: " + rollResult);
+            newRollResult = Random.Range(1, 21);
+            Debug.Log("New Result: " + newRollResult);
+            if (newRollResult <= 5)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 5 && newRollResult < 9)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 8 && newRollResult < 12)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 11 && newRollResult < 14)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 13 && newRollResult < 16)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 15 && newRollResult < 18)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 17 && newRollResult < 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult == 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+        }
+        if (rollResult > 5 && rollResult < 9)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 8 && rollResult < 12)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 11 && rollResult < 14)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 13 && rollResult < 16)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 15 && rollResult < 18)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 17 && rollResult < 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult == 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+    }
+    public void IsOnPX()
+    {
+        if (rollResult <= 5)
+        {
+            Debug.Log("Old Result: " + rollResult);
+            newRollResult = Random.Range(1, 21);
+            Debug.Log("New Result: " + newRollResult);
+            if (newRollResult <= 5)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 5 && newRollResult < 9)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 8 && newRollResult < 12)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 11 && newRollResult < 14)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 13 && newRollResult < 16)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 15 && newRollResult < 18)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 17 && newRollResult < 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult == 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+        }
+        if (rollResult > 5 && rollResult < 9)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 8 && rollResult < 12)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 11 && rollResult < 14)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 13 && rollResult < 16)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 15 && rollResult < 18)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 17 && rollResult < 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult == 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+    }
+    public void IsOnGU()
+    {
+        if (rollResult <= 5)
+        {
+            Debug.Log("Old Result: " + rollResult);
+            newRollResult = Random.Range(1, 21);
+            Debug.Log("New Result: " + newRollResult);
+            if (newRollResult <= 5)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 5 && newRollResult < 9)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 8 && newRollResult < 12)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 11 && newRollResult < 14)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 13 && newRollResult < 16)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 15 && newRollResult < 18)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 17 && newRollResult < 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult == 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+        }
+        if (rollResult > 5 && rollResult < 9)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 8 && rollResult < 12)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 11 && rollResult < 14)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 13 && rollResult < 16)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 15 && rollResult < 18)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 17 && rollResult < 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult == 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+    }
+    public void IsOnNU() 
+    {
+        if (rollResult <= 5)
+        {
+            Debug.Log("Old Result: " + rollResult);
+            newRollResult = Random.Range(1, 21);
+            Debug.Log("New Result: " + newRollResult);
+            if (newRollResult <= 5)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 5 && newRollResult < 9)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 8 && newRollResult < 12)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 11 && newRollResult < 14)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 13 && newRollResult < 16)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 15 && newRollResult < 18)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 17 && newRollResult < 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult == 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+        }
+        if (rollResult > 5 && rollResult < 9)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 8 && rollResult < 12)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 11 && rollResult < 14)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 13 && rollResult < 16)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 15 && rollResult < 18)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 17 && rollResult < 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult == 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+    }
+    public void IsOnTV()
+    {
+        if (rollResult <= 5)
+        {
+            Debug.Log("Old Result: " + rollResult);
+            newRollResult = Random.Range(1, 21);
+            Debug.Log("New Result: " + newRollResult);
+            if (newRollResult <= 5)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 5 && newRollResult < 9)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 8 && newRollResult < 12)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 11 && newRollResult < 14)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 13 && newRollResult < 16)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 15 && newRollResult < 18)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 17 && newRollResult < 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult == 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+        }
+        if (rollResult > 5 && rollResult < 9)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 8 && rollResult < 12)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 11 && rollResult < 14)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 13 && rollResult < 16)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 15 && rollResult < 18)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 17 && rollResult < 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult == 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+    }
+    public void IsOnBM()
+    {
+        if (rollResult <= 5)
+        {
+            Debug.Log("Old Result: " + rollResult);
+            newRollResult = Random.Range(1, 21);
+            Debug.Log("New Result: " + newRollResult);
+            if (newRollResult <= 5)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 5 && newRollResult < 9)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 8 && newRollResult < 12)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 11 && newRollResult < 14)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 13 && newRollResult < 16)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 15 && newRollResult < 18)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult > 17 && newRollResult < 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+            if (newRollResult == 20)
+            {
+                encounterResultText.text = "";
+                encounterResultText.gameObject.SetActive(true);
+            }
+        }
+        if (rollResult > 5 && rollResult < 9)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 8 && rollResult < 12)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 11 && rollResult < 14)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 13 && rollResult < 16)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 15 && rollResult < 18)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult > 17 && rollResult < 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+        if (rollResult == 20)
+        {
+            encounterResultText.text = "";
+            encounterResultText.gameObject.SetActive(true);
+        }
+    }
 
     private void HideResultText()
     {
