@@ -30,6 +30,8 @@ public class CameraFollow : MonoBehaviour
 
     private void Awake() 
     {
+        target = GameObject.FindWithTag("Player").transform;
+
         Cursor.visible = false;
         mapMinX = mapRenderer.transform.position.x - mapRenderer.bounds.size.x / 2f;
         mapMaxX = mapRenderer.transform.position.x + mapRenderer.bounds.size.x / 2f;
