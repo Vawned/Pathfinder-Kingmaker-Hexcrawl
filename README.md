@@ -5,7 +5,7 @@ This application is a companion for the Hexcrawl portion of the Kingmaker Advent
 
 Features:
 
-• The whole map of the Stolen Lands;
+• The whole map of the Stolen Lands, left click to move, the party icon will move to the center of the hex clicked; mouse scroll to zoom in/out; mouse scroll click to drag the map around;
   
 • Triggers when the party moves to a Hex with an event;
   
@@ -25,6 +25,6 @@ Know bugs:
 
 • Upon pushing Weather and Encounter button it reveals the text with a Fade In/Out that lasts 3 seconds. Pushing the button during this three seconds may mess up future pushes of the buttons;
 
-• There is no button to close the application, quite it with [Alt]+[F4].
+• There is no button to close the application, quit it with [Alt]+[F4].
 
 If you encounter any bugs or have suggestions you can find me at vawned@gmail.com
